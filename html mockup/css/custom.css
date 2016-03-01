@@ -1,0 +1,104 @@
+body{
+    background-color: #ecebeb;
+}
+a:hover{
+    text-decoration: none;
+}
+
+/*STYLES TOPBAR*/
+.branding{
+    background-color: #2c3e50;
+    height: 70px;
+    font-family: Cookie;
+    font-size: 36px;
+}
+
+.branding>a{
+    color: #fff;
+    font-weight: 100;
+    text-decoration: none;
+    width: 120px;
+    height: 100%;
+    display: block;
+    margin: 0 auto;
+    padding: 8px 0;
+}
+/*STYLES TOPBAR END*/
+
+/*STYLES FLICK*/
+.flick-container{
+    padding: 0 5px;    
+}
+
+.flick{
+    background-color: #fff;   
+    margin-top: 5px;
+    margin-left: -5px; /* Bootstrap hack */
+    margin-right: -10px; /* Bootstrap hack */
+    height: 60px;
+    padding-left: 0;
+    padding-right: 0;
+}
+
+.flick img.flick-image{
+    height: 60px;
+    float: left;
+    margin-right: 10px;
+}
+
+.flick .flick-title{
+    color: #2c3e50;
+    font-size: 1.2em;
+    font-weight: 600;
+}
+
+.flick .flick-release{
+    font-weight: 200;
+    font-size: .7em;
+    margin-left: 10px
+}
+
+.flick img.flick-rating{
+    max-height: 13px;
+    margin-top: -7px;
+}
+
+.flick .flick-shortInfo{
+    color: #2c3e50;
+    font-size: 0.8em;
+    margin-top: -4px;
+}
+
+.flick .flick-mediaType{
+    background-color: #2c3e50;
+    float: right;
+    width: 35px;
+    height: 100%;
+    position: relative;
+    Bottom: 55px;
+}
+.flick .flick-mediaType img{
+    width: 25px;
+    display: block;
+    margin: 23px auto;
+}
+/*STYLES FLICK END*/
+
+/*STYLES BOTTOM NAV BAR*/
+.navbar{
+    background-color: #a1b1bc;
+}
+.left-button, .mid-button, .right-button{
+    height: 50px;
+    padding: 12px 0;
+    text-align: center;
+    color: #fff;
+}
+.navbar a{
+    color: #fff;
+}
+.mid-button{
+    background-color: #2c3e50
+}
+
+/*STYLES BOTTOM NAV BAR END*/

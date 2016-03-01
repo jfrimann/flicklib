@@ -5,8 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
-    <meta name="description" content="">
-    <meta name="author" content="">
+    <meta name="description" content="Store you own movie library online. Search and add you movies to your collection.">
+    <meta name="author" content="Jesper Frimann">
     <link rel="icon" href="images/favicon.ico">
 
     <title>FlickLib - Your mobile movie library</title>
@@ -19,6 +19,7 @@
 
     <!-- Custom styles for this template -->
     <link href="css/custom.css" rel="stylesheet">
+    <link href='https://fonts.googleapis.com/css?family=Cookie:400,300,500,700&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
 
     <!-- Just for debugging purposes. Don't actually copy these 2 lines! -->
     <!--[if lt IE 9]><script src="../../assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
@@ -32,38 +33,117 @@
   </head>
 
   <body>
-    <nav class="navbar navbar-default">
-      <div class="container-fluid">
-        <!-- Brand and toggle get grouped for better mobile display -->
-        <div class="navbar-header">
-          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
-            <span class="sr-only">Toggle navigation</span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-          </button>
-          <a class="navbar-brand" href="#">Brand</a>
-        </div>
-
-        <!-- Collect the nav links, forms, and other content for toggling -->
-        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-          <ul class="nav navbar-nav navbar-right">
-            <li><a href="#">Link</a></li>
-            <li><a href="#">Link</a></li>
-            <li><a href="#">Link</a></li>
-          </ul>
-        </div><!-- /.navbar-collapse -->
-      </div><!-- /.container-fluid -->
-    </nav>
-
+    <div class="container-fluid branding">
+        <a href="#"><img src="images/logo-flickLib-header.png"/></a>
+    </div><!--End branding-->
+    <div class="container">
+        <a href="#">
+            <div class="col-md-4 flick-container">
+                <div class="col-md-12 flick">
+                    <img class="flick-image" src="images/up.jpg" alt="UP (2009)"/>
+                    <div class="flick-title">Up<span class="flick-release">(2009)</span></div>
+                    <img class="flick-rating" src="images/flick-rating-4.jpg"/>
+                    <div class="flick-shortInfo">96 min. | Animation, Familiefilm</div>
+                    <div class="flick-mediaType"><img src="images/bluray-logo.png"/></div>            
+                </div>
+            </div>
+        </a>
+        <a href="#">
+            <div class="col-md-4 flick-container">
+                <div class="col-md-12 flick">
+                    <img class="flick-image" src="images/toystory3.jpg" alt="Toystory 3 (2009)"/>
+                    <div class="flick-title">Toystory 3<span class="flick-release">(2010)</span></div>
+                    <img class="flick-rating" src="images/flick-rating-4.jpg"/>
+                    <div class="flick-shortInfo">103 min. | Animation, Adventure, Comedy</div>
+                    <div class="flick-mediaType"><img src="images/bluray-logo.png"/></div>
+                </div>
+            </div>
+        </a>
+        <a href="#">    
+            <div class="col-md-4 flick-container">
+                <div class="col-md-12 flick">
+                    <img class="flick-image" src="images/robotter.jpg" alt="UP (2003)"/>
+                    <div class="flick-title">Robotter<span class="flick-release">(2003)</span></div>
+                    <img class="flick-rating" src="images/flick-rating-3.jpg"/>
+                    <div class="flick-shortInfo">103 min. | Animation, Adventure, Comedy</div>
+                    <div class="flick-mediaType"><img src="images/dvd-logo.png"/></div>
+                </div>
+            </div>
+        </a>
+        <a href="#">
+            <div class="col-md-4 flick-container">
+                <div class="col-md-12 flick">
+                    <img class="flick-image" src="images/ice-age3.jpg" alt="Ice Age 3 (2009)"/>
+                    <div class="flick-title">Ice Age 3<span class="flick-release">(2009)</span></div>
+                    <img class="flick-rating" src="images/flick-rating-4.jpg"/>
+                    <div class="flick-shortInfo">94 min. | Animation, Familiefilm, Adventure</div>
+                    <div class="flick-mediaType"><img src="images/bluray-logo.png"/></div>
+                </div>
+            </div>
+        </a>
+        <a href="#">
+            <div class="col-md-4 flick-container">
+                <div class="col-md-12 flick">
+                    <img class="flick-image" src="images/ice-age4.jpg" alt="Ice Age 4 (2012)"/>
+                    <div class="flick-title">Ice Age 4<span class="flick-release">(2012)</span></div>
+                    <img class="flick-rating" src="images/flick-rating-3.jpg"/>
+                    <div class="flick-shortInfo">88 min. | Animation, Familiefilm, Adventure</div>
+                    <div class="flick-mediaType"><img src="images/bluray-logo.png"/></div>
+                </div>
+            </div>
+        </a>
+        <a href="#">
+            <div class="col-md-4 flick-container">
+                <div class="col-md-12 flick">
+                    <img class="flick-image" src="images/lion-king.jpg" alt="UP (1994)"/>
+                    <div class="flick-title">Løvernes Konge<span class="flick-release">(1994)</span></div>
+                    <img class="flick-rating" src="images/flick-rating-3.jpg"/>
+                    <div class="flick-shortInfo">89 min. | Animation, Familiefilm</div>
+                    <div class="flick-mediaType"><img src="images/dvd-logo.png"/></div>
+                </div>
+            </div>
+        </a>
+        <a href="#">
+            <div class="col-md-4 flick-container">
+                <div class="col-md-12 flick">
+                    <img class="flick-image" src="images/dinosaur.jpg" alt="Dinosaur (2000)"/>
+                    <div class="flick-title">Dinosaur<span class="flick-release">(2000)</span></div>
+                    <img class="flick-rating" src="images/flick-rating-2.jpg"/>
+                    <div class="flick-shortInfo">82 min. | Animation, Familiefilm</div>
+                    <div class="flick-mediaType"><img src="images/dvd-logo.png"/></div>
+                </div>
+            </div>
+        </a>
+        <a href="#">
+            <div class="col-md-4 flick-container">
+                <div class="col-md-12 flick">
+                    <img class="flick-image" src="images/ace-ventura1.jpg" alt="Ace Ventura 1 (1994)"/>
+                    <div class="flick-title">Ace Ventura 1<span class="flick-release">(1994)</span></div>
+                    <img class="flick-rating" src="images/flick-rating-4.jpg"/>
+                    <div class="flick-shortInfo">86 min. | Komedie</div>
+                    <div class="flick-mediaType"><img src="images/dvd-logo.png"/></div>
+                </div>
+            </div>
+        </a>
+        <a href="#">
+            <div class="col-md-4 flick-container">
+                <div class="col-md-12 flick">
+                    <img class="flick-image" src="images/ace-ventura2.jpg" alt="Ace Ventura 2 (1995)"/>
+                    <div class="flick-title">Ace Ventura 2<span class="flick-release">(1995)</span></div>
+                    <img class="flick-rating" src="images/flick-rating-4.jpg"/>
+                    <div class="flick-shortInfo">90 min. | Komedie</div>
+                    <div class="flick-mediaType"><img src="images/dvd-logo.png"/></div>
+                </div>
+            </div>
+        </a>
+    </div>
     <nav class="navbar navbar-default navbar-fixed-bottom">
       <div class="container-fluid">
-          <div class="col-xs-4"><a href="#">Library</a></div>
-          <div class="col-xs-4"><a href="#">Add flick to library</a></div>
-          <div class="col-xs-4"><a href="#">Settings</a></div>
-      </div>
-    </nav>
-
+          <a href="#"><div class="col-xs-4 left-button"><img src="images/logo-header.png" alt="Your library"/></div></a>
+          <a href="#"><div class="col-xs-4 mid-button"><img src="images/add-flick-icon.png" alt="Add flick to library"/></div></a>
+          <a href="#"><div class="col-xs-4 right-button"><img src="images/settings-icon.png" alt="Settings"/></div></a>
+      </div><!--End container-fluid-->
+    </nav><!--End nav-->
 
     <!-- Bootstrap core JavaScript
     ================================================== -->
