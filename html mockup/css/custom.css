@@ -26,20 +26,34 @@ a:hover{
 /*STYLES TOPBAR END*/
 
 /*STYLES FLICK*/
+/*
 .flick-container{
-    padding: 0 5px;    
+    padding: 0 5px; 
+    height: 78px;
+    background-image: url("../images/flick-bottom-shadow.png");
+    background-repeat: no-repeat;
+    background-position: bottom center;
+    background-size: 360px;
 }
+*/
 
 .flick{
-    background-color: #fff;   
-    margin-top: 5px;
+    background-color: #fff;  
     margin-left: -5px; /* Bootstrap hack */
     margin-right: -10px; /* Bootstrap hack */
     height: 60px;
     padding-left: 0;
     padding-right: 0;
 }
-
+.flick-bottom-shadow{
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 10px;
+    bottom: -6px;
+    position: absolute;
+    
+}
 .flick img.flick-image{
     height: 60px;
     float: left;
@@ -73,7 +87,7 @@ a:hover{
     background-color: #2c3e50;
     float: right;
     width: 35px;
-    height: 100%;
+    height: 60px;
     position: relative;
     Bottom: 55px;
 }
@@ -82,6 +96,52 @@ a:hover{
     display: block;
     margin: 23px auto;
 }
+
+.flickDetails-core-details{
+    background-color: #fff;
+    background-image: url("./images/flickDetails-core-bottom-shadow.jpg");
+    background-repeat: no-repeat; 
+    background-position: bottom;
+    background-size: contain;
+    height: 150px;
+    top: 70px;
+    padding: 14px 0;
+}
+.flickDetails-core-right{
+    margin: 0;
+    padding: 0;
+}
+.flickDetails-core-details img{
+    float: left;
+    margin-right: 10px;
+}
+.flickDetails-title{
+    display: block;
+    float: left;
+    padding: 0;
+    margin: 0;
+    font-size: 1.8em;
+    font-weight: 800;
+    color: #2c3e50;
+}
+.flickDetails-release{
+    font-weight: 200;
+    font-size: 0.6em;
+    padding-left: 15px;
+}
+.flickDetails-rating{
+    padding: 5px 0;    
+}
+.flickDetails-rating img{
+    height: 15px
+} 
+.flickDetails-summary{
+    font-family: Raleway;
+    font-size: 1em;
+    height: 120px;
+    color: #777;
+}
+
 /*STYLES FLICK END*/
 
 /*STYLES BOTTOM NAV BAR*/
@@ -102,3 +162,36 @@ a:hover{
 }
 
 /*STYLES BOTTOM NAV BAR END*/
+
+/*Media Queries*/
+
+@media (max-width: 767px){ /*xs devices (phones)*/
+    .flick-container{
+        height: 69px;
+        margin: 5px 0;
+        padding: 0;
+        background-image: url("../images/flick-bottom-shadow.png");
+        background-repeat: no-repeat;
+        background-position: bottom;
+        background-size: 400px;
+    }    
+}
+
+@media (min-width: 768px){ /*sm devices (Tablets)*/
+    .flick-container{
+        height: 69px;
+        margin: 5px 0;
+        padding: 0;
+        background-image: url("../images/flick-bottom-shadow.png");
+        background-repeat: no-repeat;
+        background-position: bottom;
+        background-size: 400px;
+    }    
+}
+
+@media (min-width: 992px){ /*md devices (Desktop)*/
+    .flick-container{
+        padding-right: 10px;
+        margin: 5px 0 0 0;
+    }
+}
