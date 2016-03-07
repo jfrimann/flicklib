@@ -1,5 +1,6 @@
 body{
     background-color: #ecebeb;
+    color: #2c3e50;
 }
 a:hover{
     text-decoration: none;
@@ -96,6 +97,8 @@ a:hover{
     display: block;
     margin: 23px auto;
 }
+
+/*Flick Details view - Core details*/
 .flickDetails-core-right{
     margin: 0;
     padding: 0;
@@ -130,7 +133,31 @@ a:hover{
     height: 120px;
     color: #777;
 }
-
+/*Flick Details view - Facts*/
+.flickDetails-facts-container{
+    background-color: #fff;
+    border-top: 1px solid #dfe8ee;
+    border-bottom: 1px solid #dfe8ee;
+    padding: 0;
+    margin-top: 20px;
+}
+.flickDetails-fact{
+    border-bottom: 1px solid #dfe8ee;
+    padding: 10px 10px 30px 10px;
+}
+.flickDetails-facts-header{
+    float: left;
+    font-weight: 800;
+}
+.flickDetails-facts-value{
+    float: right;
+    font-weight: 200;
+}
+.imdb-rating{
+    font-size: 1.4em;
+    font-weight: 800;
+    padding-right: 3px;
+}
 /*STYLES FLICK END*/
 
 /*STYLES BOTTOM NAV BAR*/
@@ -165,7 +192,6 @@ a:hover{
         background-size: 400px;
     }  
     .flickDetails-core-container{
-        top: 70px;
         height: 169px;
         background-image: url(./images/flick-bottom-shadow.png);
         background-repeat: no-repeat; 
@@ -298,9 +324,12 @@ a:hover{
         float: left;
         padding-top: 2px;
     }
+    .flickDetails-facts-container{
+        margin-bottom: 70px;
+    }
 }
 
-@media (min-width: 1200px){ /*md devices (Desktop)*/
+@media (min-width: 1200px){ /*lg devices (Large desktop)*/
     .flickDetails-core-container{
         
     }
