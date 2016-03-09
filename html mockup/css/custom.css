@@ -26,18 +26,12 @@ a:hover{
 }
 /*STYLES TOPBAR END*/
 
-/*STYLES FLICK*/
-/*
-.flick-container{
-    padding: 0 5px; 
-    height: 78px;
-    background-image: url("../images/flick-bottom-shadow.png");
-    background-repeat: no-repeat;
-    background-position: bottom center;
-    background-size: 360px;
-}
-*/
+/*STYLES FLICK LIBRARY VIEW*/
 
+.flick-library{
+    padding-top: 10px;
+    padding-right: 19px;
+}
 .flick{
     background-color: #fff;  
     margin-left: -5px; /* Bootstrap hack */
@@ -70,7 +64,7 @@ a:hover{
 .flick .flick-release{
     font-weight: 200;
     font-size: .7em;
-    margin-left: 10px
+    margin-left: 5px
 }
 
 .flick img.flick-rating{
@@ -80,11 +74,14 @@ a:hover{
 
 .flick .flick-shortInfo{
     color: #2c3e50;
-    font-size: 0.8em;
+    font-size: 0.75em;
     margin-top: -4px;
+    max-width: 175px;
+    max-height: 15px;
+    overflow: hidden;
 }
 
-.flick .flick-mediaType{
+.flick > .flick-mediaType, .flick .flick-add-icon{
     background-color: #2c3e50;
     float: right;
     width: 35px;
@@ -92,12 +89,13 @@ a:hover{
     position: relative;
     Bottom: 55px;
 }
-.flick .flick-mediaType img{
+.flick > .flick-mediaType > img, .flick > .flick-add-icon > img{
     width: 25px;
     display: block;
     margin: 23px auto;
 }
 
+/*STYLES - FLICK DETAILS VIEW*/
 /*Flick Details view - Core details*/
 .flickDetails-core-right{
     margin: 0;
@@ -139,7 +137,7 @@ a:hover{
     border-top: 1px solid #dfe8ee;
     border-bottom: 1px solid #dfe8ee;
     padding: 0;
-    margin-top: 20px;
+    margin-top: 10px;
 }
 .flickDetails-fact{
     border-bottom: 1px solid #dfe8ee;
@@ -158,7 +156,38 @@ a:hover{
     font-weight: 800;
     padding-right: 3px;
 }
-/*STYLES FLICK END*/
+/*STYLES - ADD FLICK VIEW*/
+.flick-searchbar{
+    background-color: #fff;
+    border-bottom: 1px solid #dfe8ee;   
+    height: 60px;
+}
+.navbar-form{
+    margin: 0;
+    padding: 0;
+    border: none;
+}
+.flick-search-input{
+    border: none;
+    border-left: none;
+    border-radius: 0;
+    height: 3.4em;
+    font-size: 1.2em;
+    font-weight: 200;
+    width: 100%!important;
+}
+.flick-search > .flick > .flick-title{
+    padding-top: 10px
+}
+.flick-search > .flick > .flick-mediaType{
+    bottom: 45px;
+}
+.flick > .flick-add-icon{
+    Bottom: 45px;
+}
+.flick .flick-add-icon img{
+    width: 20px;
+}
 
 /*STYLES BOTTOM NAV BAR*/
 .navbar{
@@ -184,7 +213,7 @@ a:hover{
 @media (max-width: 767px){ /*xs devices (phones)*/
     .flick-container{
         height: 69px;
-        margin: 5px 0;
+        margin: 0px 0;
         padding: 0;
         background-image: url("../images/flick-bottom-shadow.png");
         background-repeat: no-repeat;
@@ -235,7 +264,7 @@ a:hover{
 @media (min-width: 768px){ /*sm devices (Tablets)*/
     .flick-container{
         height: 69px;
-        margin: 5px 0;
+        margin: 0 0;
         padding: 0;
         background-image: url("../images/flick-bottom-shadow.png");
         background-repeat: no-repeat;
