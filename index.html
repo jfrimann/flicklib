@@ -22,7 +22,11 @@
     <script src="js/lib/angular.min.js"></script>
     <script src="js/lib/angular-route.min.js"></script>
     <script src="js/lib/angular-animate.min.js"></script>
+
+    <script src='https://cdn.firebase.com/js/client/2.2.1/firebase.js'></script>
+
     <script src="js/app.js"></script>
+    <script src="js/controllers/registration.js"></script>
 
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!--[if lt IE 9]>
@@ -34,8 +38,8 @@
   <body>
     <header class="container-fluid branding">
     </header><!--End branding-->
-    <div class="page" ng-controller="flickLibController">
-        {{ message }}
+    <div class="page" ng-view>
+
     </div>
     <nav class="navbar navbar-default navbar-fixed-bottom">
 

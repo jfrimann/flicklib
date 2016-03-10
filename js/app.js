@@ -1,5 +1,16 @@
-var flickLib = angular.module('flickLib', []);
+var flickLib = angular.module('flickLib', ['ngRoute']);
 
-flickLib.controller('flickLibController', ['$scope', function($scope) {
-    $scope.message = "Welcome to FlickLib";
-}])
+flickLib.config(['$routeProvider', function($routeProvider) {
+    $routeProvider.
+        when('/login', {
+            templateUrl: 'views/login.html',
+            controller: 'RegistrationController'
+        }).
+        when('/register', {
+        templateUrl: 'views/register.html',
+        controller: 'RegistrationController'
+        }).
+        otherwise({
+        redirectTo: '/login'
+        });
+}]);
