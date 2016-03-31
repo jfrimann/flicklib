@@ -1,11 +1,18 @@
 body{
     background-color: #ecebeb;
     color: #2c3e50;
+    letter-spacing: .05em;
+}
+a{
+    color: #fff;
+    font-weight: 100;
 }
 a:hover{
     text-decoration: none;
+    color: #a1b1bc;
 }
-
+.page{
+}
 /*STYLES TOPBAR*/
 .branding{
     background-color: #2c3e50;
@@ -23,6 +30,21 @@ a:hover{
     display: block;
     margin: 0 auto;
     padding: 8px 0;
+}
+.logo-banner {
+    padding: 10px;
+}
+.loggedin-user {
+    font-size: .3em;
+    font-family: Raleway;
+    font-weight: 100;
+    color: #fff;
+    text-align: center;
+    text-transform: uppercase;
+    margin-bottom: -10px;
+}
+a.btn-logout {
+    text-decoration: underline;
 }
 /*STYLES TOPBAR END*/
 
@@ -189,6 +211,44 @@ a:hover{
     width: 20px;
 }
 
+/*STYLES LOGIN AND REGISTER VIEW*/
+.login-register-container{
+    padding: 20px;
+    margin-top: 20px;
+    background-color: #2c3e50;
+    color: #fff;
+    font-weight: 100;
+}
+h1.login-register-header{
+    color: #a1b1bc;
+    font-size: 1.3em;
+    font-weight: 200;
+    margin: 20px 0 0px 0;
+}
+.login-register-container > p{
+    color:#fff;
+    font-weight: 100;
+}
+.login-register-container .form-control, .login-register-container button{
+    margin: 20px auto;
+    width: 70%;
+    max-width: 400px;
+    height: 35px;
+    border: none;
+    font-weight: 200;
+}
+.btn{
+    background-color: #a1b1bc;
+    color: #fff;
+    font-weight: 200;
+}
+.btn:hover{
+    background-color: #5b707f;
+    color: #fff;
+}
+input.ng-invalid.ng-touched{
+    border: 2px inset #d8475a;
+}
 /*STYLES BOTTOM NAV BAR*/
 .navbar{
     background-color: #a1b1bc;
@@ -258,6 +318,20 @@ a:hover{
     .flickDetails-core-summary{
         float: left;
         padding-top: 2px;
+    }
+    .login-register-container{
+        margin-top: -10px;
+        padding: 0 0 400px 0
+    }
+    h1.login-register-header{
+        margin: 10px 0;
+    }
+    .login-register-container > p{
+         margin: 18px;
+        font-size: .9em;
+    }
+    .login-register-container .form-control, .login-register-container button{
+        margin: 10px auto;
     }
 }
 

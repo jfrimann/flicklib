@@ -1,1 +1,15 @@
-<p>{{ message }}</p>
+<section class="col-md-4 col-md-offset-4 login-register-container text-center">
+    <h1 class="login-register-header">Login to your flickLib</h1>
+    <p ng-show="message">{{ message }}</p>
+    <form name="loginForm" ng-submit="loginUser()" novalidate>
+        <div class="form-group">
+            <input type="email" class="form-control" name="email" placeholder="Username (email)" ng-model="user.email" ng-required="true">
+            <input type="password"class="form-control" id"inputPassword" placeholder="Password" ng-model="user.password" ng-required="true">
+            <button type="submit" class="btn btn-default" ng-disabled="loginForm.$invalid">Login</button>
+        </div>
+        <p>
+            or <a ng-href="#/register">Register</a>
+        </p>
+        <p><a ng-href="#/success">success</a></p>
+    </form>
+</section>

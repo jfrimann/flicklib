@@ -1,0 +1,7 @@
+<div class="logo-banner text-center">
+   <img src="images/logo-flickLib-header.png"/>
+</div>
+<div class="loggedin-user text-center" ng-show="currentUser" ng-controller="RegistrationController">
+   {{"Flick on " + currentUser.firstName + " " + currentUser.lastName + " - "}}
+   <a class="btn-logout" ng-href="#/login" ng-click="logoutUser()">logout</a>
+</div>
