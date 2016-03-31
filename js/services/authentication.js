@@ -25,8 +25,12 @@ flickLib.factory('Authentication', ['$rootScope', '$firebaseAuth', '$firebaseObj
             });
         },// end loginUser
 
+        requireAuth: function() {
+            return auth. $requireAuth();
+        },
+
         logoutUser: function() {
-            console.log('lkjlkjlj');
+            $rootScope.message = "";
             return auth.$unauth();
         }, // end logoutUser
 

@@ -7,9 +7,8 @@
             <input type="password"class="form-control" id"inputPassword" placeholder="Password" ng-model="user.password" ng-required="true">
             <button type="submit" class="btn btn-default" ng-disabled="loginForm.$invalid">Login</button>
         </div>
-        <p>
+        <p ng-hide="currentUser">
             or <a ng-href="#/register">Register</a>
         </p>
-        <p><a ng-href="#/success">success</a></p>
     </form>
 </section>
